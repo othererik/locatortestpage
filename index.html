@@ -422,6 +422,26 @@
           </form>
         </section>
       </main>
+      <script>
+        function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function hideFunction() {
+            var x = document.getElementById("will-hide");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                sleep(5000).then(() => {
+                 x.style.display = "none";
+                });
+            }
+        }
+      </script>
+      <div id="will-hide">
+        <button onclick="hideFunction()" id="hide-button">Click Me To Hide in 5 seconds</button>
+        This is text in a disappearing div.
+      </div>
       <footer role="contentinfo">
         <p>Original page Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
       </footer>
