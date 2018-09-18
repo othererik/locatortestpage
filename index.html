@@ -68,7 +68,7 @@
    <body>
       <div id="top" class="page" role="document">
          <script>
-            function showClicked(msg) {
+            function showMessage(msg) {
                 var x = document.getElementById("message-div");
                 if (x.style.display === "none") {
                     x.style.display = "block";
@@ -139,7 +139,7 @@
                      <h3>Heading 3</h3>
                      <h4>Heading 4</h4>
                      <h5>Heading 5</h5>
-                     <h6 onclick="showClicked('Heading 6 Clicked');">Heading 6</h6>
+                     <h6 onclick="showMessage('Heading 6 Clicked');">Heading 6</h6>
                   </div>
                   <footer>
                      <p><a href="#top">[Top]</a></p>
@@ -364,6 +364,7 @@
                         <img src="http://placekitten.com/420/420" alt="Image alt text">
                         <figcaption>Here is a caption for this image.</figcaption>
                      </figure>
+                     <p><img src="http://placekitten.com/200/200" onmouseover="showMessage('Image Hovered');" onmouseout="showMessage('Imange Hover Ended');" ></p>
                   </div>
                   <footer>
                      <p><a href="#top">[Top]</a></p>
