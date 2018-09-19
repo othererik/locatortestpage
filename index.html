@@ -91,6 +91,7 @@
                 ev.preventDefault();
                 var data = ev.dataTransfer.getData("text");
                 ev.target.appendChild(document.getElementById(data));
+                showMessage("Image Dropped")
             }
             
             function showMessage(msg) {
