@@ -121,7 +121,6 @@
            }
          }
          
-         document.getElementById('upload-files').addEventListener('change', handleFileSelect, false);           
       </script>
       <title>HTML5 Test Page</title>
    </head>
@@ -665,6 +664,9 @@
          <h2>File upload</h2>
          <input type="file" id="upload-files" name="files[]" multiple />
          <output id="upload-list"></output>
+         <script>
+           document.getElementById('upload-files').addEventListener('change', handleFileSelect, false);           
+         </script>
          <footer role="contentinfo">
             <p>Original page Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
          </footer>
